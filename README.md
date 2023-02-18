@@ -200,7 +200,7 @@ Synchronous reset:
 
 - mult_8.v : y = 9 * a; where y is 6 bit and a is 3 bit number 
 
-![opt2](https://u![7](https://user-images.githubusercontent.com/112770970/219856977-cf857274-5e68-4362-91c9-cf18d776813c.JPG)
+![opt2](https://user-images.githubusercontent.com/112770970/219857110-11a15a81-a286-4986-af93-a03f5cae29da.JPG)
 ![7](https://user-images.githubusercontent.com/112770970/219857004-f9c586ba-d3b2-4f4b-acea-63524538e85e.JPG)
 
 - **In these cases, no circuit is synthesized**
