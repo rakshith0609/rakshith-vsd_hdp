@@ -1,4 +1,4 @@
-A repository with complete documentation of VSD-HDP program
+**A repository with complete documentation of VSD-HDP program **
 
 Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hdp/)
 
@@ -84,4 +84,62 @@ $ sudo apt install gtkwave
 ~~~
 
 ## Day 1
+
+**Create directory for labs:**
+~~~
+mkdir vsd
+cd vsd
+mkdir VLSI
+cd VLSI
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
+~~~
+
+### Logic Cell Simulation
+- Simulated xor gate using good mux
+
+#### Code:
+![3](https://user-images.githubusercontent.com/112770970/219854973-77b592c2-1242-4833-be4d-0f0e876e7652.JPG)
+
+![2](https://user-images.githubusercontent.com/112770970/219854982-2e088b13-42df-4942-9b20-05b726fa4e51.JPG)
+
+#### Commands:
+~~~
+$ cd verilog_files
+$ iverilog xor_gate_using_good_mux.v xor_gate_using_good_mux_tb.v
+$ ./a.out 
+$ gtkwave xor_gate_using_good_mux_tb.vcd
+~~~
+
+#### Waveforms generated:
+![lab1](https://user-images.githubusercontent.com/112770970/219855091-c3a346c6-cb38-4334-bd2d-c59fd6b9a560.JPG)
+
+### Logic Cell Synthesis
+- Synthesized xor gate using good mux
+
+#### Commands:
+~~~
+$ yosys
+> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+> read_verilog xor_gate_using_good_mux.v good_mux.v
+> synth -top xor_gate_using_good_mux
+> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+> show xor_gate_using_good_mux
+~~~
+
+#### Synthesis Schematic:
+![4](https://user-images.githubusercontent.com/112770970/219855345-f7673c7c-b315-458c-968d-450a13000139.JPG)
+![6](https://user-images.githubusercontent.com/112770970/219855446-75760430-3d76-4d81-a6aa-d023478dad3b.JPG)
+
+![5](https://user-images.githubusercontent.com/112770970/219855385-f4d4dc9d-5034-4628-9097-b007bf09c1af.JPG)
+
+#### Commands to generate netlist:
+~~~
+> write_verilog -noattr good_mux_netlist.v
+>!gvim good_mux_netlist.v
+~~~
+
+![8](https://user-images.githubusercontent.com/112770970/219855472-1ce2e662-69f7-4a3d-a976-f768c50463c7.JPG)
+
+## Day 2
+
 
