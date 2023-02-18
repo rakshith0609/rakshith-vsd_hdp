@@ -1,4 +1,4 @@
-** A repository with complete documentation of VSD-HDP program **
+**A repository with complete documentation of VSD-HDP program**
 
 Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hdp/)
 
@@ -85,7 +85,7 @@ $ sudo apt install gtkwave
 
 ## Day 1
 
-** Create directory for labs: **
+**Create directory for labs:**
 ~~~
 mkdir vsd
 cd vsd
