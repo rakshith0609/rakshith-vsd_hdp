@@ -8,3 +8,12 @@ Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hd
 # VSD-HDP Task Status
 
 ## Day 0
+
+- Installation of necessary tools
+
+### Yosys
+#### Installation Guide
+~~~
+https://github.com/YosysHQ/yosys
+~~~
+
