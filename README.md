@@ -179,7 +179,7 @@ $ yosys
 
 Use addtional command:
 ~~~
-dfflibmap -liberty <.lib file path>
+$ > dfflibmap -liberty <.lib file path>
 ~~~
 
 Asynchronous reset:
@@ -217,6 +217,60 @@ Synchronous reset:
 ## Day 3
 
 ### Logic Optimisations
-- Combinational Logic Optimisations
-- 
+- Combinational Logic Optimisation
+  * Constant Propagation
+  * Boolean Logic Optimasation
+  
+- Sequential Logic Optimisation
+  * Sequential Constant Propagation
+  * State Optimisation
+  * Retiming
+  * Sequential logic cloning
 
+### Important Points
+- Optimisation is done to reduce unused states and redundancy.
+- In state optimisation, unused states are removed.
+- In sequential logic cloning, addtional flops are added to increase positive slack when the other flops in the design are placed far apart in the floorplan to meet their timing requirements.
+- In retiming, the combinational blocks between different flops are modelled such that their clock frequency increases without violating setup and hold, thereby, increasing performance.
+
+### Additional Command to use:
+~~~
+$ > opt_clean -purge
+~~~
+
+### Synthesis Illustating Sequential Constant Propagation
+![dff_const4_syn](https://user-images.githubusercontent.com/112770970/219862146-472e3e1a-8f37-4141-ad9c-41887ef9b774.JPG)
+
+![dff_const5_syn](https://user-images.githubusercontent.com/112770970/219862301-bb179eda-0dd5-4ddf-ab25-c005795ecf7a.JPG)
+
+### Simulation Illustating Sequential Constant Propagation
+  
+![dff_const4_wave](https://user-images.githubusercontent.com/112770970/219862898-284bc9b5-bc93-489f-a125-9eea03a87526.JPG)
+
+![dff_const5_wave](https://user-images.githubusercontent.com/112770970/219862976-c340e657-6fef-402b-b7d9-00516d301660.JPG)
+
+### Combinational Logic Optimisations
+
+#### Logic used in opt_check4.v :
+~~~
+ assign y = a ? (b ? (a & c) : c) : (!c);
+~~~
+
+![opt_check_4](https://user-images.githubusercontent.com/112770970/219863972-5bd9f48a-c1ab-4741-a335-8d17e4fa553e.JPG)
+![opt_check_4_cells](https://user-images.githubusercontent.com/112770970/219863977-574f6e43-0a48-4efe-824a-cfb8daff07e4.JPG)
+
+#### Synthesis of multiple_modules file:
+
+![multiple_modules_opt](https://user-images.githubusercontent.com/112770970/219864034-3b9e57d2-6528-4dca-9755-fe2f206682ac.JPG)
+
+### Synthesis of unused output (3-bit Counter example)
+
+![counter_opt1](https://user-images.githubusercontent.com/112770970/219864111-d46d1829-467a-468f-9b26-f77ab72cf9a9.JPG)
+
+### Synthesis if all output ports are used (3-bit Counter example)
+
+![counter_opt2](https://user-images.githubusercontent.com/112770970/219864154-864adb26-e33a-4abb-9647-8415fd40ecb7.JPG)
+
+
+
+## Day 4
