@@ -115,7 +115,7 @@ $ gtkwave xor_gate_using_good_mux_tb.vcd
 ![lab1](https://user-images.githubusercontent.com/112770970/219855091-c3a346c6-cb38-4334-bd2d-c59fd6b9a560.JPG)
 
 ### Logic Cell Synthesis
-- Synthesized xor gate using good mux
+- Synthesised xor gate using good mux
 
 ### Commands:
 ~~~
@@ -216,20 +216,20 @@ Synchronous reset:
 
 ## Day 3
 
-### Logic Optimisations
-- Combinational Logic Optimisation
+### Logic Optimizations
+- Combinational Logic Optimization
   * Constant Propagation
   * Boolean Logic Optimasation
   
-- Sequential Logic Optimisation
+- Sequential Logic Optimization
   * Sequential Constant Propagation
-  * State Optimisation
+  * State Optimization
   * Retiming
   * Sequential logic cloning
 
 ### Important Points
-- Optimisation is done to reduce unused states and redundancy.
-- In state optimisation, unused states are removed.
+- Optimization is done to reduce unused states and redundancy.
+- In state optimization, unused states are removed.
 - In sequential logic cloning, addtional flops are added to increase positive slack when the other flops in the design are placed far apart in the floorplan to meet their timing requirements.
 - In retiming, the combinational blocks between different flops are modelled such that their clock frequency increases without violating setup and hold, thereby, increasing performance.
 
@@ -238,21 +238,21 @@ Synchronous reset:
 $ > opt_clean -purge
 ~~~
 
-### Synthesis Illustating Sequential Constant Propagation:
+### Synthesis Illustrating Sequential Constant Propagation:
 - In this case, the flip flop is redundant.
 
 ![dff_const4_syn](https://user-images.githubusercontent.com/112770970/219862146-472e3e1a-8f37-4141-ad9c-41887ef9b774.JPG)
 
 ![dff_const5_syn](https://user-images.githubusercontent.com/112770970/219862301-bb179eda-0dd5-4ddf-ab25-c005795ecf7a.JPG)
 
-### Simulation Illustating Sequential Constant Propagation:
+### Simulation Illustrating Sequential Constant Propagation:
 - In this case, the output q always remains 1, therefore flip flop is not needed.
   
 ![dff_const4_wave](https://user-images.githubusercontent.com/112770970/219862898-284bc9b5-bc93-489f-a125-9eea03a87526.JPG)
 
 ![dff_const5_wave](https://user-images.githubusercontent.com/112770970/219862976-c340e657-6fef-402b-b7d9-00516d301660.JPG)
 
-### Combinational Logic Optimisations
+### Combinational Logic Optimizations
 
 ### Logic used in opt_check4.v :
 ~~~
