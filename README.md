@@ -176,6 +176,12 @@ $ yosys
 ![5](https://user-images.githubusercontent.com/112770970/219856481-5616038e-c92f-4155-89f6-c5da338a5e95.JPG)
 
 ### D-Flip Flop Synthesis
+
+Use addtional command:
+~~~
+dfflibmap -liberty <.lib file path>
+~~~
+
 Asynchronous reset:
 ![asynch_reset syn](https://user-images.githubusercontent.com/112770970/219856560-2ec3e92e-3407-4c05-bf1a-228b95236cfa.JPG)
 
@@ -184,9 +190,11 @@ Synchronous reset:
 
 ### D-Flip FLop Simulation
 Asynchronous reset:
+
 ![asynch_reset wave](https://user-images.githubusercontent.com/112770970/219856663-2603d11c-efe8-4f17-ac1a-627dc94a15e0.JPG)
 
 Synchronous reset:
+
 ![synch_reset](https://user-images.githubusercontent.com/112770970/219856669-6514e587-a19c-40c8-84df-4bd1635636a4.JPG)
 
 ### Interesting Optimizations:
@@ -203,9 +211,12 @@ Synchronous reset:
 ![opt2](https://user-images.githubusercontent.com/112770970/219857110-11a15a81-a286-4986-af93-a03f5cae29da.JPG)
 ![7](https://user-images.githubusercontent.com/112770970/219857004-f9c586ba-d3b2-4f4b-acea-63524538e85e.JPG)
 
-- **In these cases, no circuit is synthesized**
+- **In these cases, no circuit is synthesised**
 
 
 ## Day 3
 
+### Logic Optimisations
+- Combinational Logic Optimisations
+- 
 
