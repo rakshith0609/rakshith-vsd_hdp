@@ -210,7 +210,7 @@ Synchronous reset:
 ![opt2](https://user-images.githubusercontent.com/112770970/219857110-11a15a81-a286-4986-af93-a03f5cae29da.JPG)
 ![7](https://user-images.githubusercontent.com/112770970/219857004-f9c586ba-d3b2-4f4b-acea-63524538e85e.JPG)
 
-- **In these cases, no circuit is synthesised**
+- **In these cases, the cells in the standard cell library won't be mapped as only nets are realised.**
 
 
 ## Day 3
