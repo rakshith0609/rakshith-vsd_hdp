@@ -326,3 +326,95 @@ $ > opt_clean -purge
 - This design also results in a simulation synthesis mismatch.
 
 ## Day 5
+
+### If and Case Statements
+- Both if and case statements infer muxes but if statements have priority logic.
+- Incomplete if and case statements infer an unwanted latch.
+- All the outputs must be specified inside all the sub-cases else latches are inferred.
+- Overlapping cases in the case statements leads to ambiguous output.
+
+### Incomplete If statements
+- Simulation
+
+![incomp if sim](https://user-images.githubusercontent.com/112770970/221235513-28a617ec-2217-452d-aa18-8230dea43691.JPG)
+
+
+- Synthesis
+
+![incomp if synth](https://user-images.githubusercontent.com/112770970/221235733-9426a6fe-b288-4430-9b38-e4e33bf6943b.JPG)
+
+- It can be seen that latch is inferred as shown above.
+
+### Incomplete Case statements
+- Simulation
+
+![incomp case sim](https://user-images.githubusercontent.com/112770970/221245695-f79c6153-4a55-47a4-9aba-230700f5080b.JPG)
+
+
+- Synthesis
+
+![incomp case synth](https://user-images.githubusercontent.com/112770970/221245793-50a20891-670b-4868-b1ba-96087b354c85.JPG)
+
+- It can be seen that latch is inferred as shown above.
+
+- The solution for the above problem is specifiying default case.
+
+- The simulation and synthesis of case with default is shown below:
+
+![case with default sim](https://user-images.githubusercontent.com/112770970/221246682-7f36c4e3-bd66-4f9d-ab7c-2abba9e2f100.JPG)
+
+![case with default synth](https://user-images.githubusercontent.com/112770970/221246740-f4472080-c4a9-499c-a439-2c2d57002295.JPG)
+
+
+### Output register not assigned in a particular subcase
+- Simulation
+
+![bad case sim](https://user-images.githubusercontent.com/112770970/221247206-472daa5f-7639-4549-b40e-5964dc563941.JPG)
+
+
+- Simulation of the generated netlist (GLS)
+
+![bad case netlist sim](https://user-images.githubusercontent.com/112770970/221247470-a7563c7c-7c9a-4c9f-9ff2-a4a709a9f606.JPG)
+
+
+- It can be seen that there exists a simulation synthesis mismatch in this case as output in a particular subcase is not specified.
+
+
+### Loop and Generate Constructs
+- Loops are used to reduce the size of the RTL code in any complex situation.
+- Generate blocks are used to instantiate modules large number of times in other words, it replicates hardware.
+
+### 1 x 8 Demux using for statements
+- Simulation
+
+![demux for loop sim](https://user-images.githubusercontent.com/112770970/221248795-322a358b-99f7-483f-9dc9-485b2cfab4f1.JPG)
+
+
+- Synthesis
+
+![demux for loop synthJPG](https://user-images.githubusercontent.com/112770970/221248861-b544f89e-a1d7-486b-af74-c6aa24d935a3.JPG)
+
+
+- Simulation of gate level netlist
+
+![demux for loop netlist sim](https://user-images.githubusercontent.com/112770970/221249009-791bbc62-7271-4ad1-8efb-2321d9fcee95.JPG)
+
+- It can be observed that there is no simulation synthesis mismatch arising in this case.
+
+### Ripple carry adder using generate loop
+- Simulation
+
+![rca sim](https://user-images.githubusercontent.com/112770970/221249549-a1500b22-11fa-434a-bda6-f42a118a4bf8.JPG)
+
+
+- Synthesis
+
+![rca synth](https://user-images.githubusercontent.com/112770970/221249636-2c05ba2b-bde2-43bd-8865-56d57f9ec640.JPG)
+
+
+- Simulation of gate level netlist
+
+![rca netlist sim](https://user-images.githubusercontent.com/112770970/221249716-cd59ad25-789d-4929-a82e-c8c3633d360d.JPG)
+
+- It can be observed that there is no simulation synthesis mismatch arising in this case.
+
