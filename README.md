@@ -343,7 +343,7 @@ $ > opt_clean -purge
 
 ![incomp if synth](https://user-images.githubusercontent.com/112770970/221235733-9426a6fe-b288-4430-9b38-e4e33bf6943b.JPG)
 
-- It can be seen that latch is inferred as shown above.
+- It can be seen that a latch is inferred as shown above.
 
 ### Incomplete Case statements
 - Simulation
@@ -355,9 +355,9 @@ $ > opt_clean -purge
 
 ![incomp case synth](https://user-images.githubusercontent.com/112770970/221245793-50a20891-670b-4868-b1ba-96087b354c85.JPG)
 
-- It can be seen that latch is inferred as shown above.
+- It can be seen that a latch is inferred as shown above.
 
-- The solution for the above problem is specifiying default case.
+- The solution for the above problem is specifiying the default case.
 
 - The simulation and synthesis of case with default is shown below:
 
@@ -382,7 +382,7 @@ $ > opt_clean -purge
 
 ### Loop and Generate Constructs
 - Loops are used to reduce the size of the RTL code in any complex situation.
-- Generate blocks are used to instantiate modules large number of times in other words, it replicates hardware.
+- Generate blocks are used to instantiate modules many times, in other words, it replicates hardware.
 
 ### 1 x 8 Demux using for statements
 - Simulation
