@@ -290,12 +290,17 @@ $ > opt_clean -purge
 
 ### Bad Mux Example
 - Simulation of bad_mux
+
 ![bad_mux sim](https://user-images.githubusercontent.com/112770970/221162808-0cbf452d-4b55-4915-a101-bf1cecc028c5.JPG)
 
+
 - Synthesis of bad_mux
+
 ![bad_mux synth](https://user-images.githubusercontent.com/112770970/221163038-f39f861b-60d5-4ed8-a888-2006b6cdee5c.JPG)
 
+
 - Simulation of the gate level netlist generated
+
 ![bad_mux _netlist_sim](https://user-images.githubusercontent.com/112770970/221163175-f4eb136e-20b1-4f3d-92ce-f75b7156ecb5.JPG)
 
 - It can be seen above that there clearly exists a simulation synthesis mismatch.
@@ -304,12 +309,17 @@ $ > opt_clean -purge
 
 ### Blocking Assignment Caveat
 - Simulation
+
 ![BA sim](https://user-images.githubusercontent.com/112770970/221163838-b6063b1c-b192-4fdd-9928-1a76642e510f.JPG)
 
+
 - Synthesis
+
 ![BA synth](https://user-images.githubusercontent.com/112770970/221163927-37720a22-213c-46a2-a705-5cad774c4cf9.JPG)
 
+
 - Simulation of the gate level netlist generated
+
 ![BA netlist sim](https://user-images.githubusercontent.com/112770970/221163993-3e7f7f23-e216-4db9-813c-f27e9a275072.JPG)
 
 - A delay/flop behaviour can be observed in the simulation waveform.
