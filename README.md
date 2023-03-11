@@ -451,7 +451,7 @@ $ > opt_clean -purge
 
 ## Day_7
 
-- **Basic STA**
+- **Basics of STA**
   * Delay of a cell is a function of input transition and output load.
   * Timing arcs -> combinational and sequential
   * Setup and hold time for a latch and flip flop is around the sampling point.
@@ -469,9 +469,9 @@ $ > opt_clean -purge
 - **Max and Min delay constraints**
   * Calculating maximum frequency of clock and modelling combinational delay
   * Input external delay and output external delay
-  * Constraints need to included in the library file which models the input and output external delay. To include practical cases, we need to model this delay wgile specifying the input transition and output load.
+  * Constraints need to included in the library file which models the input and output external delay. To include practical cases, we need to model this delay while specifying the input transition and output load.
   * Modeling of load capacitance (max value must be specified)
-  * Use buffers to reduce fanout, thereby, decreasing the max load capacitance.
+  * Using buffers to reduce fanout, thereby, decreasing the max load capacitance.
 
 
 - **Lookup table**
