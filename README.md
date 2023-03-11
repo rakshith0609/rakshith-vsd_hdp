@@ -6,7 +6,12 @@ Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hd
 
 Progress Quick-Link:<br />
 [Day 1](#Day_1)<br />
-
+[Day 2](#Day_2)<br />
+[Day 3](#Day_3)<br />
+[Day 4](#Day_4)<br />
+[Day 5](#Day_5)<br />
+[Day 6](#Day_6)<br />
+[Day 7](#Day_7)<br />
 
 # VSD-HDP Task Status
 
@@ -146,7 +151,7 @@ $ yosys
 
 
 
-## Day 2
+## Day_2
 
 ### Important notes
 - Standard Cell Library files will contain details of all types of individual cells with different parameters of area, power and delay.
@@ -217,7 +222,7 @@ Synchronous reset:
 - **In these cases, the cells in the standard cell library won't be mapped as only nets are realised.**
 
 
-## Day 3
+## Day_3
 
 ### Logic Optimizations
 - Combinational Logic Optimization
@@ -279,7 +284,7 @@ $ > opt_clean -purge
 
 
 
-## Day 4
+## Day_4
 
 ### Gate Level Synthesis
 - logical verification
@@ -329,7 +334,7 @@ $ > opt_clean -purge
 - A delay/flop behaviour can be observed in the simulation waveform.
 - This design also results in a simulation synthesis mismatch.
 
-## Day 5
+## Day_5
 
 ### If and Case Statements
 - Both if and case statements infer muxes but if statements have priority logic.
@@ -446,7 +451,7 @@ $ > opt_clean -purge
 
 ## Day_7
 
-- *Basic STA
+- **Basic STA**
   * Delay of a cell is a function of input transition and output load.
   * Timing arcs -> combinational and sequential
   * Setup and hold time for a latch and flip flop is around the sampling point.
@@ -454,14 +459,14 @@ $ > opt_clean -purge
   * In negative level triggered latch, setup time is before the rising edge (last sampled point).
 
 
-- *Timing paths
+- **Timing paths**
   * Clock to D pin (register to register)
   * Clock to output (register to out)
   * Input to D pin  (input to register)
   * Input to output 
   
 
-- *Max and Min delay constraints
+- **Max and Min delay constraints**
   * Calculating maximum frequency of clock and modelling combinational delay
   * Input external delay and output external delay
   * Constraints need to included in the library file which models the input and output external delay. To include practical cases, we need to model this delay wgile specifying the input transition and output load.
@@ -469,7 +474,7 @@ $ > opt_clean -purge
   * Use buffers to reduce fanout, thereby, decreasing the max load capacitance.
 
 
-- *Lookup table
+- **Lookup table**
   * 2D table consisting of corresponding output load and input transistion values
   * Values in between not specified are calculated through interpolation.
   
