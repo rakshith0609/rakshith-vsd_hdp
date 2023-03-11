@@ -445,3 +445,42 @@ $ > opt_clean -purge
 
 
 ## Day_7
+
+- *Basic STA
+  * Delay of a cell is a function of input transition and output load.
+  * Timing arcs -> combinational and sequential
+  * Setup and hold time for a latch and flip flop is around the sampling point.
+  * In positive level triggered latch, setup time is before the falling edge (last sampled point).
+  * In negative level triggered latch, setup time is before the rising edge (last sampled point).
+
+
+- *Timing paths
+  * Clock to D pin (register to register)
+  * Clock to output (register to out)
+  * Input to D pin  (input to register)
+  * Input to output 
+  
+
+- *Max and Min delay constraints
+  * Calculating maximum frequency of clock and modelling combinational delay
+  * Input external delay and output external delay
+  * Constraints need to included in the library file which models the input and output external delay. To include practical cases, we need to model this delay wgile specifying the input transition and output load.
+  * Modeling of load capacitance (max value must be specified)
+  * Use buffers to reduce fanout, thereby, decreasing the max load capacitance.
+
+
+- *Lookup table
+  * 2D table consisting of corresponding output load and input transistion values
+  * Values in between not specified are calculated through interpolation.
+  
+
+- *Unateness
+  * Positive unateness -> AND OR
+  * Negative unateness -> NAND NOR NOT
+  * Non-unateness -> XOR XNOR
+
+- Note: All the above considerations are specified in the .lib file.
+
+
+## Day_8
+
