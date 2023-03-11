@@ -5,7 +5,7 @@ Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hd
 - Author: T S Rakshith, rakshith.ec20@bmsce.ac.in
 
 Progress Quick-Link:<br />
-[Day 1](#Day1)<br />
+[Day 1](#Day_1)<br />
 
 
 # VSD-HDP Task Status
@@ -87,7 +87,7 @@ $ sudo apt install gtkwave
 ~~~
 
 
-## Day 1
+## Day_1
 
 **Create directory for labs:**
 ~~~
