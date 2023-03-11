@@ -422,3 +422,26 @@ $ > opt_clean -purge
 
 - It can be observed that there is no simulation synthesis mismatch arising in this case.
 
+
+## Day_6
+
+- Design chosen: **8-bit ALU**
+
+- Simulation
+
+![alu sim](https://user-images.githubusercontent.com/112770970/224483732-2948a179-e8ea-4b67-9b1e-b7284c22a2dc.JPG)
+
+
+- Synthesis
+
+![alu synth](https://user-images.githubusercontent.com/112770970/224483750-733e9c26-dbdf-4df1-a12b-05392c149721.JPG)
+
+
+- Simulation of gate level netlist (GLS)
+
+![netlist sim alu](https://user-images.githubusercontent.com/112770970/224483778-c4b6d93c-84fc-43c3-847e-0f5739c3d3ce.JPG)
+
+- Design is simulated and synthesized. No simulation-synthesis mismatch is reported.
+
+
+## Day_7
