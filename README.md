@@ -12,6 +12,8 @@ Progress Quick-Link:<br />
 [Day 5](#Day_5)<br />
 [Day 6](#Day_6)<br />
 [Day 7](#Day_7)<br />
+[Day 8](#Day_8)<br />
+[Day 9](#Day_9)<br />
 
 # VSD-HDP Task Status
 
@@ -488,4 +490,35 @@ $ > opt_clean -purge
 
 
 ## Day_8
+
+**Advanced Constraints**
+  * Reg to reg path constrained by clock
+  * I/P to Reg path -> clock, input delay, input transition 
+  * Reg to Out path -> clock, output delay, output load
+  * Clocks not arriving at the same time for different registers -> CTS
+  * Clock skew to be eliminated post CTS
+  * Clock Jitter -> arises due to stochastic variation of clock generation
+  * Clock Uncertainty -> clock jitter + clock skew -> to be minimized post CTS
+  * Clock Modelling -> period, source latency, clock network latency, clock skew
+
+**Lab8_circuit timing report**
+
+![lab8_circuit](https://user-images.githubusercontent.com/112770970/230723695-38337455-fc9e-486b-abb7-6753a7a1ddca.JPG)
+
+
+## Day_9
+
+**ALU Constraint file:**
+
+![alu_cons](https://user-images.githubusercontent.com/112770970/230723742-fbdb3c1e-6c46-4a67-9187-de43b2af876a.JPG)
+
+
+**Timing reports**
+
+![alu_timing1](https://user-images.githubusercontent.com/112770970/230723784-ec4ef32d-40bc-4b6c-878b-a3f4862909df.JPG)
+
+![alu_timing2](https://user-images.githubusercontent.com/112770970/230723790-0dc7a432-f651-448b-8530-3fc7d751aa08.JPG)
+
+
+## Day_10
 
