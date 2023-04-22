@@ -531,7 +531,7 @@ $ > opt_clean -purge
 
 **Spice Simulation of NMOS Ids vs Vds**
 
-![image](https://user-images.githubusercontent.com/112770970/232210450-a07d3673-a5a5-49a3-bf1d-26eeefeaea25.png)
+
 
 - Learnt basics of MOS transistor operation and equations.
 
@@ -540,7 +540,7 @@ $ > opt_clean -purge
 
 **Spice Simulation of NMOS Id vs Vgs**
 
-![image](https://user-images.githubusercontent.com/112770970/232210578-85d53bc3-0156-4933-96af-63b50e210cc4.png)
+
 
 - Effect of drain current with Vgs
 - Channel length modulation
@@ -550,20 +550,20 @@ $ > opt_clean -purge
 
 **Spice Simulation of NMOS Ids vs Vds for long channel and short channel respectively**
 
-![image](https://user-images.githubusercontent.com/112770970/232210687-a583a262-fe76-48a4-b619-e1b46ca69968.png)
+
 
 - Short channel effects -> velocity saturation, mobility degradation
 
 **Spice Simulation of Voltage transfer characteristics of CMOS inverter**
 
-![image](https://user-images.githubusercontent.com/112770970/232210814-818d960b-5d44-4936-ae9c-a2e869b725dd.png)
+
 
 
 ## Day_13
 
 **Spice Simulation of Inverter Switching transition**
 
-![image](https://user-images.githubusercontent.com/112770970/232211317-2269eecc-6834-4587-91eb-f8144db0fb96.png)
+
 
 - Inverter switching action with respect to NMOS and PMOS
 
@@ -576,28 +576,16 @@ $ > opt_clean -purge
     NML = VIL-VOL // Low noise margin
 ~~~
 
-![image](https://user-images.githubusercontent.com/112770970/232212947-9865dc44-f198-4bfa-a1ab-bfbd97451d3e.png)
-
-|ITEM      | Voltage  |
-|----------|----------|
-|VOH       | 1.72273  |
-|VOL       | 0.104545 |
-|VIH       | 0.983607 |
-|VIL       | 0.75819  |
-|NMH       | 0.739123 |
-|NML       | 0.653645 |
 
 
 ## Day_15
 
 **Spice Simulation of Power Supply Scaling**
 
-![image](https://user-images.githubusercontent.com/112770970/232213282-e92c2779-79a3-4af9-b979-6e08a949cfe9.png)
 
 
 **Spice Simulation of Device Variation**    
     
-![image](https://user-images.githubusercontent.com/112770970/232213651-6d716656-88d0-4aa1-a0a1-dd21b92bb490.png)
 
 
 **Points to Remember**
