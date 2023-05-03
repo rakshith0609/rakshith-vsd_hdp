@@ -529,12 +529,33 @@ $ > opt_clean -purge
 
 ## Day_10
 
+- SPICE simulations are needed for generating delay tables needed for STA.
+
+- The delays mainly depend on W/L values which is modelled
+
+**Introduction to MOS Transistors**
+
+- 4 terminal device
+- The channel formed is controlled by lateral and vertical electric fields due to Vds and Vgs respectively.
+- Three regions od operation:
+   * Linear/Resistive -> when Vds is very small
+   * Triode -- when Vds < Vgs - Vt and Vgs > Vt
+   * Saturation -- when Vds >= Vgs - Vt
+- Body effect increases the threshold voltage.
+- Channel pinch-off occurs in saturation region and channel length modulation effect should be included in the Id equation.
+- Two types of current in the channel
+   * drift current (due to potential difference)
+   * diffusion current (due to difference in carrier concentration)
+
+**Spice Simulation**
+
+- SPICE model parameters and SPICE netlist given to the SPICE software will generate waveform for analysis
+
 **Spice Simulation of NMOS Ids vs Vds**
 
 ![image](https://user-images.githubusercontent.com/112770970/235860955-1d894b49-10ca-471b-813e-51eb48e56e2b.png)
 
-
-- Learnt basics of MOS transistor operation and equations.
+- The above plot is for CMOS inverter and different values on the plot are shown.
 
 
 ## Day_11
@@ -543,8 +564,7 @@ $ > opt_clean -purge
 
 
 
-- Effect of drain current with Vgs
-- Channel length modulation
+
 
 
 ## Day_12
@@ -553,7 +573,7 @@ $ > opt_clean -purge
 
 
 
-- Short channel effects -> velocity saturation, mobility degradation
+
 
 **Spice Simulation of Voltage transfer characteristics of CMOS inverter**
 
@@ -566,7 +586,7 @@ $ > opt_clean -purge
 
 
 
-- Inverter switching action with respect to NMOS and PMOS
+
 
 
 ## Day_14
@@ -589,10 +609,6 @@ $ > opt_clean -purge
     
 
 
-**Points to Remember**
-- Power Supply Scaling
-- Process Variation
-- Device Variation
 
 
 
