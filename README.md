@@ -531,6 +531,7 @@ $ > opt_clean -purge
 
 **Spice Simulation of NMOS Ids vs Vds**
 
+![image](https://user-images.githubusercontent.com/112770970/235860955-1d894b49-10ca-471b-813e-51eb48e56e2b.png)
 
 
 - Learnt basics of MOS transistor operation and equations.
