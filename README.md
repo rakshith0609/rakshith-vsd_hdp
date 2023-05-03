@@ -560,11 +560,27 @@ $ > opt_clean -purge
 
 ## Day_11
 
-**Spice Simulation of NMOS Id vs Vgs**
+**SPICE Netlist with same W/L ratio**
+
+![image](https://user-images.githubusercontent.com/112770970/235877401-f33f734d-3623-4e94-87b7-f55f0b468546.png)
 
 
+**Spice Simulation of NMOS Id vs Vds for W = 0.39u and L = 0.15u**
 
+![image](https://user-images.githubusercontent.com/112770970/235878444-113002a7-a61a-4902-a7dd-5f86ffa82b4a.png)
 
+- It can be seen that compared to the previous Id vs Vds graph that the saturation current slightly increases even though W/L ratio remains constant
+- This is because of short channel effect
+
+**Spice Simulation of NMOS Id vs Vgs for W = 0.39u and L = 0.15u**
+
+![image](https://user-images.githubusercontent.com/112770970/235885447-f66488df-2eee-441b-8cab-1c66dd9c1166.png)
+
+**Spice Simulation of NMOS Id vs Vgs for W = 3.12u and L = 1.20u**
+
+![image](https://user-images.githubusercontent.com/112770970/235886466-a4f18b1d-71aa-41ec-841b-d50a71600d88.png)
+
+- It can be seen from the even though the W/L ratio remains 2.6 for both the plots, Id is slightly different. Short channel transistor characteristics has more linearity than the long channel one.
 
 
 ## Day_12
