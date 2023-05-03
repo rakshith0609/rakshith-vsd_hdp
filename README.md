@@ -601,14 +601,16 @@ $ > opt_clean -purge
 
 ## Day_12
 
-**Spice Simulation of NMOS Ids vs Vds for long channel and short channel respectively**
+**Spice Netlist for inverter**
 
-
-
+![image](https://user-images.githubusercontent.com/112770970/235947980-3f11d4d5-c516-4dab-9b09-72157becbea0.png)
 
 
 **Spice Simulation of Voltage transfer characteristics of CMOS inverter**
 
+![image](https://user-images.githubusercontent.com/112770970/235947067-113ce1da-5fab-4325-9e6f-4a6b1a797a05.png)
+
+- It can be seen that the switching threshold is around 8.76 V.
 
 
 
