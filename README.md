@@ -15,6 +15,7 @@ Progress Quick-Link:<br />
 [Day 8](#Day_8)<br />
 [Day 9](#Day_9)<br />
 [Day 10](#Day_10)<br />
+[Day 11](#Day_11)<br />
 [Day 12](#Day_12)<br />
 [Day 13](#Day_13)<br />
 [Day 14](#Day_14)<br />
@@ -511,6 +512,7 @@ $ > opt_clean -purge
 ![lab8_circuit](https://user-images.githubusercontent.com/112770970/230723695-38337455-fc9e-486b-abb7-6753a7a1ddca.JPG)
 
 
+
 ## Day_9
 
 **ALU Constraint file:**
@@ -525,6 +527,7 @@ $ > opt_clean -purge
 ![alu_timing2](https://user-images.githubusercontent.com/112770970/230723790-0dc7a432-f651-448b-8530-3fc7d751aa08.JPG)
 
 ![alu_timing3](https://user-images.githubusercontent.com/112770970/232210384-7b617190-19df-4b12-89ad-b234ed5eb27f.JPG)
+
 
 
 ## Day_10
@@ -558,6 +561,7 @@ $ > opt_clean -purge
 - The above plot is for CMOS inverter and different values on the plot are shown.
 
 
+
 ## Day_11
 
 **SPICE Netlist with same W/L ratio**
@@ -581,6 +585,18 @@ $ > opt_clean -purge
 ![image](https://user-images.githubusercontent.com/112770970/235886466-a4f18b1d-71aa-41ec-841b-d50a71600d88.png)
 
 - It can be seen from the even though the W/L ratio remains 2.6 for both the plots, Id is slightly different. Short channel transistor characteristics has more linearity than the long channel one.
+
+
+**Velocity Saturation**
+
+- At higher electric fields, the electrons velocity becomes constant.
+- This happens in short channel as the electric field strengh increases due to reduced channel length.
+
+**VTC**
+
+- Used to calculate the delay tables for STA.
+- The plot of Vout vs Vin in CMOS inverter.
+
 
 
 ## Day_12
