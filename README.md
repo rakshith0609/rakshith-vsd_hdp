@@ -620,9 +620,6 @@ $ > opt_clean -purge
 
 
 
-
-
-
 ## Day_14
 
 **Noise Margin**
