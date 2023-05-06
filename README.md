@@ -618,6 +618,14 @@ $ > opt_clean -purge
 
 **Spice Simulation of Inverter Switching transition**
 
+![image](https://user-images.githubusercontent.com/112770970/236589265-21aa2016-050d-4017-a8e3-0d36edc9ad50.png)
+
+- From the above simulation delay values for rise and fall can be observed.
+- Rise Time --> 0.375 ns
+- Fall Time --> 0.2321 ns
+- The delay values of different inverters with increased pmos W/L ratio can be found.
+- It is seen that the value of rise delay decreases and fall delay increases with increase in W/L of pmos.
+
 
 
 ## Day_14
@@ -628,17 +636,29 @@ $ > opt_clean -purge
     NML = VIL-VOL // Low noise margin
 ~~~
 
+**Calculation of Noise Margin from VTC**
+
+![image](https://user-images.githubusercontent.com/112770970/236591730-5514b64f-cc56-4706-bd04-84d9d3c6a4d1.png)
+
+- From the above figure, VIL = 0.790323 V, VOH = 1.67111 V, VIH = 0.964516 V, VOL = 0.128889 V
+- NMH = 1.542 V 
+- NML = 0.174 V
 
 
 ## Day_15
 
 **Spice Simulation of Power Supply Scaling**
 
+![image](https://user-images.githubusercontent.com/112770970/236592704-4ef2d4fa-e0bd-4aec-9eb9-a5d65a8c5e2a.png)
 
+- It can be observed by the above values that the gain increases as power supply is reduced upto 1.2 V and after 1 V it starts decreasing.
 
 **Spice Simulation of Device Variation**    
     
+![image](https://user-images.githubusercontent.com/112770970/236593273-62f5ad8c-bd7d-4e26-b07c-d51c210fb1c6.png)
 
+- The swithing threshold is observed to be around 0.98 V.
+- The pmos W/L ratio is more than its nmos counterpart due to which the pmos charges the load capacitor more.
 
 
 
