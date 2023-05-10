@@ -641,8 +641,8 @@ $ > opt_clean -purge
 ![image](https://user-images.githubusercontent.com/112770970/236591730-5514b64f-cc56-4706-bd04-84d9d3c6a4d1.png)
 
 - From the above figure, VIL = 0.790323 V, VOH = 1.67111 V, VIH = 0.964516 V, VOL = 0.128889 V
-- NMH = 1.542 V 
-- NML = 0.174 V
+- NMH = 0.7065 V 
+- NML = 0.6614 V
 
 
 ## Day_15
