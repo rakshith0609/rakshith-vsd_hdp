@@ -515,9 +515,21 @@ $ > opt_clean -purge
 
 ## Day_9
 
+**ALU Code Snippet**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/36455704-a8e9-4599-baf0-88fc0c02d066)
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/8c66e91d-52e4-41bb-afca-0c68c1d17acd)
+
+
+**ALU Netlist snip**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/5065e342-1bce-4edd-b9b8-f8d6b66379d5)
+
+- It can be seen from the synthesized netlist that there is **no reg to reg path**. There are a total of **8 flops** inferred which is connected to input and output pins parallely.
+
 **ALU Constraint file:**
 
-![alu_cons](https://user-images.githubusercontent.com/112770970/230723742-fbdb3c1e-6c46-4a67-9187-de43b2af876a.JPG)
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/7261fc8f-797d-4c50-94ba-0553dfacc1e8)
 
 
 **Timing reports**
