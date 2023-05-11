@@ -673,5 +673,11 @@ $ > opt_clean -purge
 - The pmos W/L ratio is more than its nmos counterpart due to which the pmos charges the load capacitor more.
 
 
+## Day_16
 
+**STA on alu.v with different ss,ff,tt PVT corners**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/45a97b9b-3d61-4200-80d2-001aca79ba60)
+
+- Note --> timing reports of each ss,ff,tt corner is in the files above in this repository.
 
