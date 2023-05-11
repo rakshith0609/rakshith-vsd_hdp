@@ -525,7 +525,7 @@ $ > opt_clean -purge
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/5065e342-1bce-4edd-b9b8-f8d6b66379d5)
 
-- It can be seen from the synthesized netlist that there is **no reg to reg path**. There are a total of **8 flops** inferred which is connected to input and output pins parallely.
+- It can be seen from the synthesized netlist that there is **no reg to reg path**. There are a total of **8 flops** inferred which is connected to input and output pins paralelly.
 
 **ALU Constraint file:**
 
