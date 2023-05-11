@@ -678,7 +678,12 @@ $ > opt_clean -purge
 
 **STA on alu.v with different ss,ff,tt PVT corners**
 
-![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/45a97b9b-3d61-4200-80d2-001aca79ba60)
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/ab64e9b1-5650-4327-b22e-97d743d83f38)
 
 - Note --> timing reports of each ss,ff,tt corner is in the files above in this repository.
+
+**Plot of TNS,WNS,WHS with multiple corners**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/3a64bd29-de2d-4b70-87f2-4b30a22addc7)
+
 
