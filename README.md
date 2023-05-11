@@ -20,6 +20,7 @@ Progress Quick-Link:<br />
 [Day 13](#Day_13)<br />
 [Day 14](#Day_14)<br />
 [Day 15](#Day_15)<br />
+[Day 16](#Day_16)<br />
 
 # VSD-HDP Task Status
 
