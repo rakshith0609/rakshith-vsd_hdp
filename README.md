@@ -21,6 +21,8 @@ Progress Quick-Link:<br />
 [Day 14](#Day_14)<br />
 [Day 15](#Day_15)<br />
 [Day 16](#Day_16)<br />
+[Day 17](#Day_16)<br />
+[Day 18](#Day_16)<br />
 
 # VSD-HDP Task Status
 
@@ -686,4 +688,81 @@ $ > opt_clean -purge
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/3a64bd29-de2d-4b70-87f2-4b30a22addc7)
 
+
+## Day_17
+
+**Inception of Openlane and sky130 pdk**
+
+**Key Notes**
+
+- The chip in general contains many cores which are known as foundary IPs. These can be PLL, SRAM, DAC etc.
+- The general flow from applicaton software down to the hardware with system software block in between.
+- System Compiler consists of the OS, Compiler and the assembler.
+- OS handles I/O operations, memory management, process management and low level system functions.
+- Compliler converts high level code into the respective low level code according to hardware (ARM, Intelx86, RISCV, MIPS etc).
+- Assembler converts low level machine instructions (ISA) into binary streams.
+- Hardware description is written in HDL for respective ISA to follow PD flow.
+
+**What is PDK?**
+
+- PDK (process design kit) is the interface between the FAB and the designers.
+- It contains a collection of files used to model a fabrication process for the EDA tools used to design an IC.
+
+**RTL TO GDSII flow**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/89a42e85-dbc7-4b83-87fb-f409d691528c)
+
+
+- Placement is done in 2 steps after floor planning:
+  * Global --> tries to find optimal position for all cells. Such cells are not neccesarily legal. There is overlapping of cells.
+  * Detailed --> placements obtained from global are minimally altered to be legal.
+
+- Create a clock distribution network
+  * To deliver the clk to all sequential elements in a circuit with minimum skew.
+
+- Route
+  * Implement the interconnect using the available metal layers.
+  * The skywater pdk contains all the data about the interconnect layer.
+  * Metal tracks form a routing grid.
+
+- Physical Verification --> DRC and LVS
+- Timing Verification --> STA
+- OpenLANE --> produce clean (no DRC, LVS, timing violations) GDSII with no human intervention..
+
+- DFT (Design for Testing)
+  * Scan insertion
+  * Automatic Test Pattern Generation (ATPG)
+  * Test Patterns Compaction
+  * Fault Coverage
+  * Fault Simulation
+
+- Physical Implementation (Automatic PNR)
+  * Floor/Power planning
+  * End Decoupling capacitors and tap cell insertion
+  * Placement
+  * Post Placement Optimization
+  * CTS
+  * Routing
+
+- Logic Equivalency Check (LEC)
+  * The netlist and the output file of the physical implementaion is checked.
+  * Everytime the netlist is modified, verification must be performed. (CTS modifies the netlist and so does post placement optimizations).
+  * LEC is used to formally confirm that the function did not change after modifying the netlist.
+
+- Dealing with Antenna Rules Violations
+  * When a metal wire segment (long enough) is fabricated, it can act as an antenna.
+  * Reactive ion etching causes charge to accumulate on the wire.
+  * Transistor gates can be damaged due to this during fabrication.
+  * Limit the length of the interconnect to address this issue.
+  * Add a fake antenna diode next to every cell input after placement.
+
+**OpenLane Labs**
+
+- Invoking openlane and run synthesis for picorv32a design.
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/e63340c2-2492-42a3-8110-dd21d828973a)
+
+
+
+## Day_18
 
