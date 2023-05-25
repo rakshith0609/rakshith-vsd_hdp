@@ -766,3 +766,6 @@ $ > opt_clean -purge
 
 ## Day_18
 
+**Viewing floorplan of picorv32a in magic**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/b6d19665-3077-48af-917a-296d9a28a8f5)
