@@ -814,6 +814,39 @@ $ > opt_clean -purge
 
 ## Day_18
 
+**Chip Floorplan Considerations**
+
+- Define width and height of core and die
+  * A core is the section of the chip where the fundamental logic of the design is placed.
+  * A die which consists of the core, is a small semiconductor material specimen on which the fundamental circuit is fabricated.
+
+```
+Utilization factor = (area occupied by netlist) / (total area of core)
+Aspect ratio = height/width
+```
+- Define the location of pre-placed cells
+  * Bigger combinational blockes (> 100k gates) is divided and implemented separately.
+  * The main idea is that they can be implemented once and reused multiple times.
+  * These type of cells like memory, clock gating cell, comparator, mux etc. are called pre-placed cells. 
+  * They are placed only once before placement and routing of other modules.
+  * The arrangement of these IPs in a chip is reffered as floorplanning.
+  * These IPs have user defined locations and hence are placed in chip before automated placement and routing and are called as pre-placed cells.
+  * Automatic PNR tools places the remaining logical cells in the design onto chip.
+
+- Surround pre-placed cells with decoupling capacitors
+  * Due to the distance between the source and the cell, the interconnect has resistance due to which there is a voltage drop.
+  * If this voltage drop is more than the noise margin, then the cells are operated in the undefined region.
+  * Use of decoupling capacitors will store charges to compensate for the drop which occurs due to interconnect and other losses and ensures operation within noise margin.
+
+- Power Planning
+  * Use multiple sources at different locations to aviod ground bounce and droop.
+
+- Pin placement
+  * Placement of pins is in accordance with pre-placed cells, where the logical blocks are nearest to the respective pin.
+  * Clock pins thickness is more as it drives the signal to the entire chip (less resistance, more area).
+
+- Logical cell placement blockage
+
 **Viewing floorplan of picorv32a in magic**
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/b6d19665-3077-48af-917a-296d9a28a8f5)
