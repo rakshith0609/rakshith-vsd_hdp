@@ -23,6 +23,7 @@ Progress Quick-Link:<br />
 [Day 16](#Day_16)<br />
 [Day 17](#Day_17)<br />
 [Day 18](#Day_18)<br />
+[Day 19](#Day_19)<br />
 
 # VSD-HDP Task Status
 
@@ -894,6 +895,41 @@ Aspect ratio = height/width
 
 
 ## Day_19
+
+**16 mask CMOS process**
+
+- Selecting a substrate
+
+- Creating active region for transistors
+
+- P well and N well formation
+
+- Formation of gate
+
+- Lightly doped drain formation
+  * Hot electron effect --> high enery carriers break Si-Si bonds.
+  * Short channel effect
+
+- Source drain formation
+
+- Formation of contacts and interconnects (local)
+
+- High level metal layer formation
+
+**Notes:**
+- From the substrate to the final metal layer a total of 16 masks are used for photolithography.
+- The process of growing field oxide is known as LOCOS (local oxidation of Si).
+- To form any p+/n+ region, the area is doped with either B/P respectively using a process known as ion implantation.
+- Plasma anisotropic etching is done in LDD stage to create side wall spaces next to gate.
+
+
+**Layout schematic in magic of inverter cell**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/1a56f6c6-3d36-4189-b3c9-46778b2e14c3)
+
+**Extracted spice netlist from the inverter layout**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/e610c792-1fb7-42ea-9268-3057735fa1b6)
 
 
 
