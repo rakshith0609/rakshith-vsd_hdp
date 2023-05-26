@@ -851,10 +851,24 @@ Aspect ratio = height/width
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/b6d19665-3077-48af-917a-296d9a28a8f5)
 
+
+**Library Binding and Placement**
+
+- Bind netlist with physical cells
+  * Library will have cells of different physical dimension and timing constraints.
+
+- Placement of the netlist on the floorplan
+- Optimize placement (add repeaters)
+
 **Placement of cells in picorv32a**
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/d2654d14-370e-4c15-8479-24d0adbd2dee)
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/9c70baa2-5e83-4e01-96ce-161a32c50fe7)
+
+
+**Need for Characterization**
+- In the physical design flow from logic synthesis --> floorplanning --> placement --> CTS --> Routing, physical cells (gates) are common throughout.
+- We need to model and characterize these cells for each stage.
 
 
