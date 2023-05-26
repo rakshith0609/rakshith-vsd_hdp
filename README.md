@@ -102,7 +102,9 @@ $ sudo apt update
 $ sudo apt install gtkwave
 ~~~
 
+
 ------
+
 
 ## Day_1
 
@@ -161,6 +163,8 @@ $ yosys
 
 ![8](https://user-images.githubusercontent.com/112770970/219855472-1ce2e662-69f7-4a3d-a976-f768c50463c7.JPG)
 
+
+------
 
 
 ## Day_2
@@ -234,6 +238,9 @@ Synchronous reset:
 - **In these cases, the cells in the standard cell library won't be mapped as only nets are realised.**
 
 
+------
+
+
 ## Day_3
 
 ### Logic Optimizations
@@ -295,6 +302,8 @@ $ > opt_clean -purge
 ![counter_opt2](https://user-images.githubusercontent.com/112770970/219864154-864adb26-e33a-4abb-9647-8415fd40ecb7.JPG)
 
 
+------
+
 
 ## Day_4
 
@@ -345,6 +354,10 @@ $ > opt_clean -purge
 
 - A delay/flop behaviour can be observed in the simulation waveform.
 - This design also results in a simulation synthesis mismatch.
+
+
+------
+
 
 ## Day_5
 
@@ -440,6 +453,10 @@ $ > opt_clean -purge
 - It can be observed that there is no simulation synthesis mismatch arising in this case.
 
 
+------
+
+
+
 ## Day_6
 
 - Design chosen: **8-bit ALU**
@@ -459,6 +476,9 @@ $ > opt_clean -purge
 ![netlist sim alu](https://user-images.githubusercontent.com/112770970/224483778-c4b6d93c-84fc-43c3-847e-0f5739c3d3ce.JPG)
 
 - Design is simulated and synthesized. No simulation-synthesis mismatch is reported.
+
+
+------
 
 
 ## Day_7
@@ -499,6 +519,9 @@ $ > opt_clean -purge
 - Note: All the above considerations are specified in the .lib file.
 
 
+------
+
+
 ## Day_8
 
 **Advanced Constraints**
@@ -515,6 +538,8 @@ $ > opt_clean -purge
 
 ![lab8_circuit](https://user-images.githubusercontent.com/112770970/230723695-38337455-fc9e-486b-abb7-6753a7a1ddca.JPG)
 
+
+------
 
 
 ## Day_9
@@ -544,6 +569,8 @@ $ > opt_clean -purge
 
 ![alu_timing3](https://user-images.githubusercontent.com/112770970/232210384-7b617190-19df-4b12-89ad-b234ed5eb27f.JPG)
 
+
+------
 
 
 ## Day_10
@@ -576,6 +603,8 @@ $ > opt_clean -purge
 
 - The above plot is for CMOS inverter and different values on the plot are shown.
 
+
+------
 
 
 ## Day_11
@@ -614,6 +643,9 @@ $ > opt_clean -purge
 - The plot of Vout vs Vin in CMOS inverter.
 
 
+------
+
+
 
 ## Day_12
 
@@ -629,6 +661,8 @@ $ > opt_clean -purge
 - It can be seen that the switching threshold is around 8.76 V.
 
 
+------
+
 
 ## Day_13
 
@@ -642,6 +676,8 @@ $ > opt_clean -purge
 - The delay values of different inverters with increased pmos W/L ratio can be found.
 - It is seen that the value of rise delay decreases and fall delay increases with increase in W/L of pmos.
 
+
+------
 
 
 ## Day_14
@@ -661,6 +697,9 @@ $ > opt_clean -purge
 - NML = 0.6614 V
 
 
+------
+
+
 ## Day_15
 
 **Spice Simulation of Power Supply Scaling**
@@ -677,6 +716,9 @@ $ > opt_clean -purge
 - The pmos W/L ratio is more than its nmos counterpart due to which the pmos charges the load capacitor more.
 
 
+------
+
+
 ## Day_16
 
 **STA on alu.v with different ss,ff,tt PVT corners**
@@ -688,6 +730,9 @@ $ > opt_clean -purge
 **Plot of TNS,WNS,WHS with multiple corners**
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/3a64bd29-de2d-4b70-87f2-4b30a22addc7)
+
+
+------
 
 
 ## Day_17
@@ -763,6 +808,8 @@ $ > opt_clean -purge
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/e63340c2-2492-42a3-8110-dd21d828973a)
 
+
+------
 
 
 ## Day_18
