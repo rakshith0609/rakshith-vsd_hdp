@@ -871,4 +871,29 @@ Aspect ratio = height/width
 - In the physical design flow from logic synthesis --> floorplanning --> placement --> CTS --> Routing, physical cells (gates) are common throughout.
 - We need to model and characterize these cells for each stage.
 
+**Cell Design Flow**
+
+- Standard cell library contains all different types of cells with different area, power and timing contraints.
+- Inputs --> PDKs, DRC, LVS rules, spice models, library and user defined specs.
+- Design Steps --> Circuit design, layout design and characterization
+- Outputs --> CDL(circuit description language), GDSII, LEF, extracted spice netlist
+
+**Characterization Flow**
+
+- Read the model files
+- Read the extracted spice netlist
+- Recognize the behaviour of the circuit
+- Read the sub circuit
+- Attach the neccessary power sources
+- Apply stimulus
+- Give values for load capacitance
+- Provide neccessary simulation commands (.tran, .op etc)
+
+
+------
+
+
+## Day_19
+
+
 
