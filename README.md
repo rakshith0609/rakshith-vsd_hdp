@@ -102,6 +102,7 @@ $ sudo apt update
 $ sudo apt install gtkwave
 ~~~
 
+------
 
 ## Day_1
 
