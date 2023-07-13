@@ -929,7 +929,49 @@ Aspect ratio = height/width
 
 **Extracted spice netlist from the inverter layout**
 
-![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/e610c792-1fb7-42ea-9268-3057735fa1b6)
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/9c831389-77ae-4ed7-b227-6dbb0cb7ad7f)
+
+
+**Spice simulation output**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/01b61f39-603d-415b-8ba1-1c6bfe5f0f1b)
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/600670f2-ac42-424d-a751-3694776b5a77)
+
+
+------
+
+
+## Day_20
+
+**Important guidelines:**
+
+- Input and output ports must lie on the intersection of the horizontal and vertical tracks.
+- Width of the standard cell should be in odd multiples of the track pitch.
+- Height should be in odd multiples of vertical pitch.
+- Routes are specified by the tracks it can take.
+
+**It can be observed from the below figure that the input A and output Y lie on intersection of horizontal and vertical track**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/e8ca5ea6-6218-47d6-8ea5-30b0299b9ca5)
+
+~~~
+magic -T sky130A.tech sky130_inv.mag &
+
+In command window of magic:
+% grid <horizontal and vertical pitch values>
+~~~
+
+**LEF file extraction from sky130_vsdinv.mag**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/3cd7dc0d-f71c-4776-9a5f-649717dd38d8)
+
+**LEF file snippet with port parameters for inverter**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/9e0c0ac8-3612-4f41-864d-4c60907e24e6)
+
+
+
 
 
 
