@@ -970,6 +970,12 @@ In command window of magic:
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/9e0c0ac8-3612-4f41-864d-4c60907e24e6)
 
+**The characterized vsd_inverter lef file merged and synthesized**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/20aacbfd-f493-48b5-bd9d-90dd5f621427)
+
+- It can be observed that there are 1554 custom inverter instances
+
 
 
 
