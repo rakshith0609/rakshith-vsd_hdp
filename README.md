@@ -27,7 +27,7 @@ Progress Quick-Link:<br />
 
 # VSD-HDP Task Status
 
-## Day 0
+## Day_0
 
 - Installation of necessary tools
 
