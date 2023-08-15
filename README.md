@@ -972,6 +972,11 @@ In command window of magic:
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/9e0c0ac8-3612-4f41-864d-4c60907e24e6)
 
+**Modified config.tcl file to include vsd_inverter custom standard cell**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/edeeb5d2-97e5-4bd2-b301-52de4e5b725c)
+
+
 **The characterized vsd_inverter lef file merged and synthesized**
 
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/20aacbfd-f493-48b5-bd9d-90dd5f621427)
