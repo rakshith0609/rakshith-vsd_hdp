@@ -5,27 +5,28 @@ Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hd
 - Author: T S Rakshith, rakshith.ec20@bmsce.ac.in
 
 Progress Quick-Link:<br />
-[Day 1](#Day_1)<br />
-[Day 2](#Day_2)<br />
-[Day 3](#Day_3)<br />
-[Day 4](#Day_4)<br />
-[Day 5](#Day_5)<br />
-[Day 6](#Day_6)<br />
-[Day 7](#Day_7)<br />
-[Day 8](#Day_8)<br />
-[Day 9](#Day_9)<br />
-[Day 10](#Day_10)<br />
-[Day 11](#Day_11)<br />
-[Day 12](#Day_12)<br />
-[Day 13](#Day_13)<br />
-[Day 14](#Day_14)<br />
-[Day 15](#Day_15)<br />
-[Day 16](#Day_16)<br />
-[Day 17](#Day_17)<br />
-[Day 18](#Day_18)<br />
-[Day 19](#Day_19)<br />
-[Day 20](#Day_20)<br />
-[Day 21](#Day_21)<br />
+[DAY_0][(https://github.com/rakshith0609//blob/main/README.md#day-0](https://github.com/rakshith0609/rakshith-vsd_hdp/edit/main/README.md#Day_0)
+[DAY_1](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-1)
+[DAY_2](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-2)
+[DAY_3](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-3)
+[DAY_4](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-4)
+[DAY_5](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-5)
+[DAY_6](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-6)
+[DAY_7](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-7)
+[DAY_8](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-8)
+[DAY_9](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-9)
+[DAY_10](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-10)
+[DAY_11](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-11)
+[DAY_12](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-12)
+[DAY_13](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-13)
+[DAY_14](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-14)
+[DAY_15](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-15)
+[DAY_16](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-16)
+[DAY_17](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-17)
+[DAY_18](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-18)
+[DAY_19](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-19)
+[DAY_20](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-20)
+[DAY_21](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-21)
 
 # VSD-HDP Task Status
 
