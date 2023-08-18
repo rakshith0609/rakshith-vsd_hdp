@@ -5,7 +5,7 @@ Program: [SKY130-based ASIC Design Projects](https://www.vlsisystemdesign.com/hd
 - Author: T S Rakshith, rakshith.ec20@bmsce.ac.in
 
 Progress Quick-Link:<br />
-- [DAY_0](https://github.com/rakshith0609/rakshith-vsd_hdp/main/README.md##Day_0)
+- [DAY_0](https://github.com/rakshith0609/rakshith-vsd_hdp/main/README.md#Day_0)
 - [DAY_1](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-1)
 - [DAY_2](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-2)
 - [DAY_3](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-3)
@@ -25,7 +25,7 @@ Progress Quick-Link:<br />
 - [DAY_17](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-17)
 - [DAY_18](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-18)
 - [DAY_19](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-19)
-- [DAY_20](https://github.com/rakshith0609/rakshith-vsd_hdp/main/README.md##Day_20)
+- [DAY_20](https://github.com/rakshith0609/rakshith-vsd_hdp/main/README.md#Day_20)
 - [DAY_21](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-21)
 
 # VSD-HDP Task Status
