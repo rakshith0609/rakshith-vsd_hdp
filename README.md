@@ -25,7 +25,7 @@ Progress Quick-Link:<br />
 - [DAY_17](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-17)
 - [DAY_18](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-18)
 - [DAY_19](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-19)
-- [DAY_20](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-20)
+- [DAY_20](https://github.com/rakshith0609/rakshith-vsd_hdp/main/README.md#Day_20)
 - [DAY_21](https://github.com/Visruat/Visruat-VSD-HDP/blob/main/README.md#day-21)
 
 # VSD-HDP Task Status
