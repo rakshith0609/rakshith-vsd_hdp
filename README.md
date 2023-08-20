@@ -984,6 +984,13 @@ In command window of magic:
 
 - It can be observed that there are 1554 custom inverter instances
 
+**Viewing the placement of sky130_vsdinv in magic**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/60d6cc93-d20b-4c47-8e72-9a04550ca175)
+
+
+
+
 
 
 
