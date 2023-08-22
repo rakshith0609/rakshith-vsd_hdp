@@ -989,6 +989,30 @@ In command window of magic:
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/60d6cc93-d20b-4c47-8e72-9a04550ca175)
 
 
+**Timing Analysis with ideal clocks**
+
+- Tcomb < (Tclk - S - SU)
+- where Tcomb is the combinational block between launch and capture flop
+- S is the setup time of the capture flop
+- SU is the setup uncertainty which consists of jitter and skew
+- Since different clock edges arrive at launch and capture, their uncertainty values are different.
+
+**pre_sta.conf and my_base.sdc**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/dc5bf231-3327-4ed3-a279-fe2b7888deb8)
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/7a0ae36a-8701-46fb-af34-31308694fb3c)
+
+**Running pre_sta.conf in opensta to check timing reports**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/f348d183-5a6d-4181-ba05-aa4f3efaba86)
+
+- To reduce slack, check the delay values of cells with more delay, and reduce the MAX_FANOUT parameter.
+- This is because the delay depends on input transition and output load.
+
+
+
+
 
 
 
