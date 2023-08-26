@@ -1009,7 +1009,70 @@ In command window of magic:
 
 - To reduce slack, check the delay values of cells with more delay, and reduce the MAX_FANOUT parameter.
 - This is because the delay depends on input transition and output load.
+- Also setup slack violation can be reduced by using a cell with more area and lesser delay. Those particular cells with high delay values are replaced in opensta.
 
+**After CTS**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/9bbf2999-ccbb-4e85-973f-a38da9350aee)
+
+Command to run CTS
+~~~
+run_cts
+~~~
+
+**Checking slack after CTS**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/6c200cc1-ca7c-4a69-adc7-9fd0235b2e1d)
+
+- Commands:
+~~~
+openroad
+read_lef /openLANE_flow/designs/picorv32a/runs/25-05_14-59/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/25-05_14-59/results/cts/picorv32a.cts.def
+write_db pico_cts_rak.db
+read_db pico_cts_rak.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/25-05_14-59/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock (all_clocks)
+report_checks -path_delay min_max -format full_clock_expanded -digits 4
+~~~
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/87272b0c-82bc-485c-affd-0284d49dc169)
+
+------
+
+## Day_21
+
+**Routing- Lee's Algorithm**
+
+- connect any 2 placed cells with least distance
+- Route cannot go over pre-placed cells
+- Routing grid is built
+- Adjacent cells of each grid from the source to the destination is labelled in ascending order.
+- used for global routing
+
+**Limitations of Lee's Algorithm**
+
+- Time consuming as alogorithm starts from sorce point to destination point for all the cells.
+- Takes a lot of memory
+
+
+**Power distribution network creation**
+
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/8b98f7d5-b9cb-4cf4-800a-7de4931d5890)
+
+- Provides ground and power rails for the standard cell.
+- Power pads -> power rings -> power stipes -> The order in which power is distributed.
+
+- Command: gen_pdn
+
+**Global and Detailed Routing**
+
+- Global Routing is connections made to all the blocks on the core.
+- Detailed Routing is the connection within the individual blocks.
+- Command: run_routing
 
 
 
