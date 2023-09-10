@@ -1059,7 +1059,7 @@ report_checks -path_delay min_max -format full_clock_expanded -digits 4
 **Limitations of Lee's Algorithm**
 
 - Time consuming as alogorithm starts from sorce point to destination point for all the cells.
-- Takes a lot of memory
+- Consumes excessive memory
 
 
 **Power distribution network creation**
