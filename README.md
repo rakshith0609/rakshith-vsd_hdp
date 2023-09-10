@@ -1005,6 +1005,9 @@ In command window of magic:
 
 **Running pre_sta.conf in opensta to check timing reports**
 
+![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/d532c92c-ca59-45c0-a04f-f23f3041820c)
+
+
 ![image](https://github.com/rakshith0609/rakshith-vsd_hdp/assets/112770970/f348d183-5a6d-4181-ba05-aa4f3efaba86)
 
 - To reduce slack, check the delay values of cells with more delay, and reduce the MAX_FANOUT parameter.
